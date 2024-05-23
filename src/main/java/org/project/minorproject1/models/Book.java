@@ -1,5 +1,6 @@
 package org.project.minorproject1.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -26,10 +27,12 @@ public class Book {
 
     @ManyToOne
     @JoinColumn
+    @JsonIgnoreProperties({"bookList", "createdOn"})
     private Author author;
 
     @ManyToOne
     @JoinColumn
+    @JsonIgnoreProperties("bookList")
     private Student student;
 
     @CreationTimestamp
@@ -39,5 +42,6 @@ public class Book {
     private Date updatedOn;
 
     @OneToMany(mappedBy = "book")
+    @JsonIgnoreProperties("book")
     private List<Transaction> transactionList;
 }
