@@ -34,8 +34,8 @@ The application uses the following configuration properties:
 1. **Clone the repository**:
 
     ```sh
-    git clone https://github.com/your-username/minor-project-1.git
-    cd minor-project-1
+    git clone https://github.com/your-username/library-manager.git
+    cd library-manager
     ```
 
 2. **Configure the application**:
