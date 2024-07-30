@@ -9,6 +9,18 @@ Library Manager is a Spring Boot-based application designed to manage Book, Stud
 - **Fine Calculation**: Automatically calculates fines for overdue books based on the configured return duration and fine per day.
 - **CRUD Operations**: Supports Create, Read, Update, and Delete operations for books and Students
 
+## Tech Stack
+
+- **Java 17**
+- **Spring Boot**
+- **Spring Data JPA (SQL)**
+- **Maven**
+
+## Prerequisites
+
+- Java 17
+- Maven
+
 ## Configuration
 
 The application uses the following configuration properties:
@@ -42,3 +54,7 @@ The application uses the following configuration properties:
     ./mvnw clean install
     ./mvnw spring-boot:run
     ```
+## License
+### This project is licensed under the MIT License. See the LICENSE file for details.
+
+`https://github.com/dHRvBiyAn1/library-manager.git`. This `README.md` provides a comprehensive overview and instructions for setting up and running your library-manager project.
